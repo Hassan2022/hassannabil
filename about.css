@@ -95,7 +95,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
 }
 #skills i:hover {
-    cursor: pointer;
     transform: scale(1.03);
 }
 #projects .col-lg-4 {
@@ -104,7 +103,6 @@ body::-webkit-scrollbar-thumb {
 
 #education .education {
     align-items: center;
-    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgba(46, 223, 193, 0.5);
 }
