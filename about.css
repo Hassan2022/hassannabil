@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+  
+body {
+    background-image: url("https://img.freepik.com/free-photo/blue-toned-collection-paper-sheets-with-copy-space_23-2148320445.jpg?w=900&t=st=1709066598~exp=1709067198~hmac=c5c0995a7289d90e1e59f33310d419716d3975cedc8f97a8f31c119f7619dcaf");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+  
+header .logo {
+    font-size: 2em;
+    margin-top: 2%;
+    color: #555;
+    text-decoration: none;
+}
+  
+header .logo span {
+    color: #7d2ae8;
+}
+nav.navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+  
+nav.navigation a {
+    line-height: 50px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+  
+nav.navigation a:hover {
+    color: #7d2ae8;
+}
+
+.navigation-desktop a.active {
+    color: #7d2ae8;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #66dce2;
+}
+
+#skills i {
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#skills i:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#projects .col-lg-4 {
+    padding: 20px;
+}
+
+#education .education {
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(46, 223, 193, 0.5);
+}
+#education .education:hover {
+    transform: scale(1.02);
+}
+
+.information {
+    display: flex;
+    color: #555;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+  
+.information i {
+    color: #1ABC9C;
+}
