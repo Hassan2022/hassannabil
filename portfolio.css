@@ -64,6 +64,18 @@ nav.navigation a:hover {
   color: #7d2ae8;
 }
 
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #7d2ae8;
+}
 #projects {
   padding: 50px 0;
 }
