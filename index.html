@@ -49,7 +49,7 @@
           to start my career and make meaningful contributions with commitment
           and drive.
         </p>
-        <div class="btn-group">
+        <div class="btn-group mobile-stack">
           <a
             href="https://drive.google.com/file/d/1LhY1N8uAAeiExGjAUO1urZ9jUay_43U-/view?usp=sharing"
             target="_blank"
@@ -74,7 +74,6 @@
         </div>
       </div>
     </section>
-
     <script>
       const words = [
         "Web Developer",
@@ -84,7 +83,7 @@
       let wordIndex = 0;
       let charIndex = 0;
       const changingText = document.getElementById("changing-text");
-
+    
       function type() {
         if (charIndex < words[wordIndex].length) {
           changingText.innerHTML += words[wordIndex].charAt(charIndex);
@@ -94,7 +93,7 @@
           setTimeout(erase, 2000);
         }
       }
-
+    
       function erase() {
         if (charIndex > 0) {
           changingText.innerHTML = words[wordIndex].substring(0, charIndex - 1);
@@ -105,10 +104,26 @@
           setTimeout(type, 500);
         }
       }
-
+    
       document.addEventListener("DOMContentLoaded", function () {
         setTimeout(type, 1000);
       });
-    </script>
+    
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.getElementById('nav-menu');
+    
+      menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+          navMenu.classList.remove("active");
+          menuToggle.setAttribute("aria-expanded", false);
+        }
+      });
+    </script>    
   </body>
 </html>
